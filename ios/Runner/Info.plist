@@ -45,5 +45,7 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Bruce Companion uses Bluetooth to discover and connect to your Bruce (M5Cardputer) device.</string>
 </dict>
 </plist>

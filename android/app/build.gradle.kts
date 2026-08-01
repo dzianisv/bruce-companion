@@ -8,7 +8,11 @@ plugins {
 android {
     namespace = "com.vibetech.bruce_companion"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // Pinned to an NDK already installed on this machine (Flutter defaults to
+    // 28.2.x which isn't present; 27.1.x is a broken partial download). No
+    // plugin here has native C++, so the exact NDK version is immaterial —
+    // this just avoids a needless SDK download.
+    ndkVersion = "29.0.14206865"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

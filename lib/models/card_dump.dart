@@ -138,7 +138,9 @@ class CardDump {
 
 /// Contract the parser layer (`models/dump_parsers.dart`) must satisfy:
 ///
-///   CardDump parseDump(CardFile file, {String? text, List<int>? bytes});
+/// ```dart
+/// CardDump parseDump(CardFile file, {String? text, List<int>? bytes});
+/// ```
 ///
 /// It receives the dump's content (text for text formats, bytes for `.bin`)
 /// already fetched over the transport, and returns a populated [CardDump].

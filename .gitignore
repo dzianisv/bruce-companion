@@ -43,3 +43,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Build output / local session artifacts
+android/build/
+.supervisor/
+session.txt
