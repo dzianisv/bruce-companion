@@ -48,3 +48,7 @@ app.*.map.json
 android/build/
 .supervisor/
 session.txt
+
+# Personal card dumps (keep out of repo)
+dumps/
+session-*.txt
