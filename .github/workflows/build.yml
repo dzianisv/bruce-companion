@@ -22,15 +22,15 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      - uses: android-actions/setup-android@v3
+
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
           cache: true
 
-      - name: Accept Android licenses & install pinned NDK
-        run: |
-          yes | sdkmanager --licenses >/dev/null 2>&1 || true
-          sdkmanager "ndk;29.0.14206865"
+      - name: Install pinned NDK
+        run: sdkmanager "ndk;29.0.14206865"
 
       - run: flutter --version
       - run: flutter pub get
